@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+
+header{
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+header .principal{
+    display: inlines;
+}
+
+header div img{
+    width: 50vw;
+}
+
+header div .barra-busqueda{
+    width: 50vw;
+}
+
+header nav div ul li a{
+    display: inline-block;
+}
+
+header nav div ul li i{
+    color: black;
+}
+
+main{
+    background: gainsboro;
+    width: 90vw;
+    text-align: center;
+    line-height: 10px;
+    margin: auto;    
+}
+
+.buscador{
+    background-color: white;
+}
+
+.compra_sint{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    text-align: left;
+}
+
+a{ 
+    text-decoration:none;
+    color: black;
+}
+
+.burger-menu{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding:6px;
+    background: blue;
+    margin: auto;
+    border-radius: 5px;
+}
+
+div i{
+    color: white;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 24px;
+}
+
+main div section .products{
+    border: 1px solid #ebebeb;
+    padding: 15px; 
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+
+main{
+    padding-bottom: 10px;
+}
+
+main div section .products article{
+    background: white; 
+    padding-bottom: 10px;
+}
+
+main div section .products article i{
+    display: block;
+    color: green;
+    font-size: 16px;
+    border: 1px #39b54a solid;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+}
+
+img{
+    max-width: 80vw;
+}
+
+.precios{
+    font-size: 18px;
+    width: 30vw;
+}
+
+.descuentos{
+    font-size: 16px;
+    width: 70vw;
+}
+
+.descripcion{
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+    color: #666;
+    padding-top: 10px;
+}
+
+footer i{
+    color: blue;
+    font-size: 2em;
+    line-height: 10px;
+}
+
+/* estilos para el login */
+
+.main-login{
+    padding-top: 10px;
+    width: 100vw;
+}
+
+/* estilos para el register */
+
+.main-register{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 100vw;
+}
+
+.main-register div label{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main-register div button{
+    padding: 5px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    border-radius: 5%;
+}
+
+@media (max-width: 360px){
+    header div{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    nav{
+        display: none;
+    }
+
+    main section .products .descripcion{
+        display: none;
+    }
+
+
+    /* estilos para el login */
+    .main-login form div input{
+        width: 60%;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 5%;
+    }
+
+    .main-login form button{
+        width: 60%;
+        height: 35px;
+        background-color: blue;
+        border: 1px solid blue;
+        color: white;
+        border-radius: 5%;
+    }
+}
+
+    /* estilos para el register */
+    .main-register .perfil-usuario{
+        display: flex;
+        justify-content:center;
+    }
+
+    .main-register .intereses input{
+        display: flex;
+        justify-content: center;
+    }
+
+@media (min-width: 361px){
+    header nav div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+
+    header nav div ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    
+    main div section .products article{
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* estilos para el login */
+    .main-login form div input{
+        width: 70%;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 5%;
+    }
+
+    .main-login form button{
+        width: 70%;
+        height: 35px;
+        background-color: blue;
+        border: 1px solid blue;
+        color: white;
+        border-radius: 3%;
+    }
+}
+
+/* estilos para el register */
+.main-register .perfil-usuario{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 769px){
+    header div{
+        display: flex;
+    }
+    .burger-menu{
+        display: none;
+    }
+    main div section .products article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* estilos para el login */
+    .main-login form div input{
+        width: 70%;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 5%;
+    }
+
+    .main-login form button{
+        width: 70%;
+        height: 35px;
+        background-color: blue;
+        border: 1px solid blue;
+        color: white;
+        border-radius: 3%;
+    }
+}
