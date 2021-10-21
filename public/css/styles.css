@@ -84,7 +84,6 @@ main div section .products{
     border: 1px solid #ebebeb;
     padding: 15px; 
     margin: auto;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
 }
 
 main{
@@ -126,6 +125,7 @@ img{
 
 .descripcion{
     font-size: 16px;
+    display: none;
 }
 
 footer{
@@ -134,10 +134,11 @@ footer{
     padding-top: 10px;
 }
 
-footer i{
+footer div i{
     color: blue;
     font-size: 2em;
     line-height: 10px;
+    margin-bottom: 10px;
 }
 
 /* estilos para el login */
@@ -170,7 +171,7 @@ footer i{
     border-radius: 5%;
 }
 
-@media (max-width: 360px){
+@media (max-width: 480px){
     header div{
         display: flex;
         flex-wrap:wrap;
@@ -214,7 +215,7 @@ footer i{
         justify-content: center;
     }
 
-@media (min-width: 361px){
+@media (min-width: 481px){
     header nav div{
         display: flex;
         flex-wrap: wrap;
@@ -274,6 +275,28 @@ footer i{
         flex-wrap: wrap;
     }
 
+    main div section .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main div section .products article:hover .descripcion{
+        display: block;
+    } 
+
+    main div section .products article i:hover{
+        transform: rotate(-90deg);
+        transition: 500ms;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer i:hover{
+        color: #EAC926;
+    }
+
     /* estilos para el login */
     .main-login form div input{
         width: 70%;
@@ -285,9 +308,18 @@ footer i{
     .main-login form button{
         width: 70%;
         height: 35px;
-        background-color: blue;
-        border: 1px solid blue;
+        background-color: gray;
+        border: 1px solid gray;
         color: white;
         border-radius: 3%;
+    }
+
+    .main-login form button:hover{
+        background: #0022AA;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
     }
 }
