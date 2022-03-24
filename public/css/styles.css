@@ -149,7 +149,7 @@ main div section .products article i{
     right: 50px;
 }
 
-img{
+.img-products{
     max-width: 80vw;
 }
 
@@ -182,11 +182,20 @@ footer div i{
     margin-bottom: 10px;
 }
 
+.Copyright{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 /* estilos para el login */
 
 .main-login{
     padding-top: 10px;
     width: 100vw;
+}
+
+.form-login{
+    padding: 70px;
 }
 
 /* estilos para el register */
@@ -204,12 +213,23 @@ footer div i{
     font-size: 15px;
 }
 
+.main-register .inputs-text{
+    padding: 3px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
 .main-register div button{
     padding: 5px;
     background-color: blue;
     border: 1px solid blue;
     color: white;
     border-radius: 5%;
+}
+
+.boton-submit{
+    margin-bottom: 10px;
 }
 
 @media (max-width: 480px){
@@ -221,6 +241,7 @@ footer div i{
     header div .busqueda .barra-busqueda{
         width: 85%;
         height: 30%;
+        padding: 3px;
     }
 
     header div .busqueda button{
@@ -229,8 +250,7 @@ footer div i{
     }
 
     header div .busqueda button i{
-        width: 1px;
-        height: 10px;
+        font-size: 12px;
     }
 
     nav{
@@ -244,10 +264,10 @@ footer div i{
 
     /* estilos para el login */
     .main-login form div input{
-        width: 60%;
         height: 35px;
         border: 1px solid white;
         border-radius: 5%;
+        padding: 3px;
     }
 
     .main-login form button{
@@ -272,6 +292,8 @@ footer div i{
     }
 
 @media (min-width: 481px){
+
+    /* estilosd del header */    
     header nav div{
         display: flex;
         flex-wrap: wrap;
@@ -293,12 +315,17 @@ footer div i{
         display: none;
     }
     
+    /* estilos del main del home */ 
     main div section{
         flex-direction: row;
         justify-content: space-around;
         align-items: stretch;
         flex-wrap: wrap;
     }
+
+    main .products{
+        width: 60vw;
+    } 
 
     main div section .products article{
         margin: auto;
@@ -313,6 +340,7 @@ footer div i{
         height: 35px;
         border: 1px solid white;
         border-radius: 5%;
+        padding: 3px;
     }
 
     .main-login form button{
@@ -330,6 +358,8 @@ footer div i{
     display: flex;
     justify-content: center;
 }
+
+
 
 @media (min-width: 769px){
     header div{
@@ -349,6 +379,7 @@ footer div i{
     .burger-menu{
         display: none;
     }
+
     main div section .products article{
         display: flex;
         flex-wrap: wrap;
@@ -382,6 +413,7 @@ footer div i{
         height: 35px;
         border: 1px solid white;
         border-radius: 5%;
+        padding: 3px;
     }
 
     .main-login form button{
@@ -395,6 +427,20 @@ footer div i{
 
     .main-login form button:hover{
         background: #0022AA;
+    }
+
+    .form-login{
+        
+    }
+    /* fin de estilos login */
+
+    /* estilos para el register */
+    .perfil-usuario div{
+        display: block;        
+    }
+
+    .perfil-usuario #perfil{
+        margin: 10px;
     }
 
     footer{

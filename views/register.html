@@ -49,12 +49,12 @@
     <main class="main-register">
         <form action="" method="POST">
             <div>
-                <input type="text" placeholder="Nombre y Apellido" name="nombre-apellido" id="nombre-apellido" required>
+                <input type="text" class="inputs-text" placeholder="Nombre y Apellido" name="nombre-apellido" id="nombre-apellido" required>
             </div>
             <br>
             <br>
             <div>
-                <input type="text" placeholder="Nombre de usuario" name="nombre-user" id="user" required minlength="6">
+                <input type="text" class="inputs-text" placeholder="Nombre de usuario" name="nombre-user" id="user" required minlength="6">
             </div>
             <br>
             <br>
@@ -67,14 +67,16 @@
             <br>
             <br>
             <div>
-                <input type="text" placeholder="Domicilio" name="direccion-domicilio" id="domicilio">
+                <input type="text" class="inputs-text" placeholder="Domicilio" name="direccion-domicilio" id="domicilio">
             </div>
             <br>
             <br>
             <div class="perfil-usuario">
-                <label for="perfil">Perfil de usuario:</label>
-                <input type="radio" name="perfil" id="perfil" required>Comprador
-                <input type="radio" name="perfil" id="perfil" required>Vendedor
+                <div>
+                    <label for="perfil">Perfil de usuario:</label>
+                    <input type="radio" name="perfil" id="perfil" required>Comprador
+                    <input type="radio" name="perfil" id="perfil" required>Vendedor
+                    </div>            
             </div>
             <br>
             <br>
@@ -99,17 +101,17 @@
             <br>
             <br>
             <div>
-                <input type="password" placeholder="Contraseña" name="pass" id="pass" required>
+                <input type="password" class="inputs-text" placeholder="Contraseña" name="pass" id="pass" required>
             </div>
             <br>
             <br>
             <div>
-                <input type="password" placeholder="Confirmar contraseña" name="pass" id="pass-conf" required>
+                <input type="password" class="inputs-text" placeholder="Confirmar contraseña" name="pass" id="pass-conf" required>
             </div>
             <br>
             <br>
             <div>
-                <button type="submit">Enviar</button>
+                <button class="boton-submit" type="submit">Enviar</button>
                 <button type="reset">Borrar todos los campos</button>
             </div>
         </form>
@@ -137,7 +139,7 @@
     </footer>
     <br>
     <br>
-    <p>Copyright c 1999-2020 MercadoLiebre S.R.L.</p>
+    <h4 class="Copyright">Copyright c 1999-2020 MercadoLiebre S.R.L.</h4>
 </body>
 
 </html>
