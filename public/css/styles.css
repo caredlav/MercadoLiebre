@@ -110,7 +110,7 @@ h1{
     width: 100vw;
 }
 
-main div{
+main .container-main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,13 +119,13 @@ main div{
     margin: auto;
 }
 
-main div section .products{
+main .container-main section .products{
     border: 1px solid #ebebeb;
     padding: 15px; 
     margin: auto;
 }
 
-main div section .products article{
+main .container-main section .products article{
     background: white; 
     padding-bottom: 10px;
     display: flex;
@@ -135,7 +135,7 @@ main div section .products article{
     text-align: left;
 }
 
-main div section .products article i{
+main .container-main section .products article i{
     display: block;
     color: green;
     font-size: 16px;
@@ -198,11 +198,12 @@ footer div i{
     padding: 70px;
 }
 
+/*fin de los estilos del login*/
+
 /* estilos para el register */
 
 .main-register{
     padding: 10px;
-    padding-top: 20px;
     padding-bottom: 20px;
     margin: auto;
     width: 100vw;
@@ -220,17 +221,75 @@ footer div i{
     border: 1px solid white;
 }
 
-.main-register div button{
+.container-register-button{
+    margin-top: 1rem;
+    display: inline-grid;
+    margin-bottom: 2rem;
+}
+
+.main-register .container-register-button button{
     padding: 5px;
     background-color: blue;
     border: 1px solid blue;
     color: white;
-    border-radius: 5%;
+    border-radius: 10px;
+}
+
+.title-register{
+    margin: 1rem;
 }
 
 .boton-submit{
     margin-bottom: 10px;
 }
+
+/*estilos del register*/
+
+.form-register{
+    border: solid 1px black;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+
+.form-register label{
+    display: block;
+    font-size: 1rem;
+    margin: 6px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.inputs-register{
+    border-radius: 1rem;
+    margin: 7px;
+    padding: 3px;
+    width: 60vw
+}
+
+.inputs-radio{
+    position: relative;
+    top: 2px;
+}
+
+.inputs-checkbox{
+    position: relative;
+    top: 2px;
+    margin: 1px;
+    margin-right: 2px;
+}
+
+.container-inputs-checkbox{
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: -1rem;
+}
+
+.input-avatar{
+    margin-bottom: 1rem;
+}
+
+/*fin de los estilos del register*/
 
 @media (max-width: 480px){
     header div{
@@ -429,9 +488,6 @@ footer div i{
         background: #0022AA;
     }
 
-    .form-login{
-        
-    }
     /* fin de estilos login */
 
     /* estilos para el register */

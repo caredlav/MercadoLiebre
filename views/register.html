@@ -47,70 +47,30 @@
     </header>
 
     <main class="main-register">
-        <form action="" method="POST">
-            <div>
-                <input type="text" class="inputs-text" placeholder="Nombre y Apellido" name="nombre-apellido" id="nombre-apellido" required>
-            </div>
-            <br>
-            <br>
-            <div>
-                <input type="text" class="inputs-text" placeholder="Nombre de usuario" name="nombre-user" id="user" required minlength="6">
-            </div>
-            <br>
-            <br>
-            <div>
-                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-                <br>
-                <br>
-                <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" required>
-            </div>
-            <br>
-            <br>
-            <div>
-                <input type="text" class="inputs-text" placeholder="Domicilio" name="direccion-domicilio" id="domicilio">
-            </div>
-            <br>
-            <br>
-            <div class="perfil-usuario">
-                <div>
-                    <label for="perfil">Perfil de usuario:</label>
-                    <input type="radio" name="perfil" id="perfil" required>Comprador
-                    <input type="radio" name="perfil" id="perfil" required>Vendedor
-                    </div>            
-            </div>
-            <br>
-            <br>
-            <div class="intereses">
-                <label for="categoria-intereses">Intereses:</label>
-                <br>
-                <br>
-                <input type="checkbox" name="intereses" value="electro" id="categoria-intereses">Electro
-                <input type="checkbox" name="intereses" value="moda" id="categoria-intereses">Moda
-                <input type="checkbox" name="intereses" value="hogar" id="categoria-intereses">Hogar
-                <input type="checkbox" name="intereses" value="juguetería" id="categoria-intereses">Juguetería
-                <input type="checkbox" name="intereses" value="vida sana" id="categoria-intereses">Vida sana
-            </div>
-            <br>
-            <br>
-            <div>
-                <label for="foto-usuario">Foto de usuario: </label>
-                <br>
-                <br>
-                <input type="file" name="foto-usuario" id="foto-usuario" accept=".jpg .png" multiple>
-            </div>
-            <br>
-            <br>
-            <div>
-                <input type="password" class="inputs-text" placeholder="Contraseña" name="pass" id="pass" required>
-            </div>
-            <br>
-            <br>
-            <div>
-                <input type="password" class="inputs-text" placeholder="Confirmar contraseña" name="pass" id="pass-conf" required>
-            </div>
-            <br>
-            <br>
-            <div>
+        <h2 class="title-register">Formulario de registro</h2>
+        <form class="form-register" action="" method="POST">                  
+           <input type="text" class="inputs-register" placeholder="Nombre y Apellido" name="nombre-apellido" required>
+           <input type="text" class="inputs-register" placeholder="Nombre de usuario" name="nombre-user" required minlength="6">
+           <label for="dateOfBirth">Fecha de nacimiento</label>
+           <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+           <input type="text" class="inputs-register" placeholder="Domicilio" name="domicilio" required>
+           <label for="perfil">Perfil:</label>
+           <input type="radio" class="inputs-radio" id="perfil" required>Comprador
+           <input type="radio" class="inputs-radio" id="perfil" required>Vendedor
+           <label for="intereses">Intereses:</label>
+           <div class="container-inputs-checkbox">
+              <input type="checkbox" class="inputs-checkbox" value="electro">Electro
+            <input type="checkbox" class="inputs-checkbox" value="moda">Moda
+            <input type="checkbox" class="inputs-checkbox" value="hogar">Hogar
+            <input type="checkbox" class="inputs-checkbox" value="juguetería">Juguetería
+            <input type="checkbox" class="inputs-checkbox" value="vida sana">Vida sana 
+           </div>
+           
+           <label for="foto-perfil">Foto de perfil</label>
+           <input type="file" class="input-avatar" id="foto-perfil" required accept=".jpg .png" multiple>
+           <input type="password" class="inputs-register" placeholder="Contraseña" name="pass" required>
+           <input type="password" class="inputs-register" placeholder="Confirmar contraseña" name="ConfirmPass" required>
+            <div class="container-register-button">
                 <button class="boton-submit" type="submit">Enviar</button>
                 <button type="reset">Borrar todos los campos</button>
             </div>
