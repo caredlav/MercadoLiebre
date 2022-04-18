@@ -246,6 +246,7 @@ footer div i{
 /*estilos del register*/
 
 .form-register{
+    margin: 1rem;
     border: solid 1px black;
     border-radius: 1rem;
     background-color: whitesmoke;
@@ -281,11 +282,11 @@ footer div i{
 
 .container-inputs-checkbox{
     padding: 1rem;
-    margin: 1rem;
     margin-top: -1rem;
 }
 
 .input-avatar{
+    width: 70vw;
     margin-bottom: 1rem;
 }
 
@@ -413,6 +414,7 @@ footer div i{
 }
 
 /* estilos para el register */
+
 .main-register .perfil-usuario{
     display: flex;
     justify-content: center;
@@ -420,7 +422,7 @@ footer div i{
 
 
 
-@media (min-width: 769px){
+@media (min-width: 768px){
     header div{
         display: flex;
     }
@@ -491,6 +493,18 @@ footer div i{
     /* fin de estilos login */
 
     /* estilos para el register */
+    .input-date{
+        width: 32vw;
+    }
+
+    .input-avatar{
+        width: unset;
+    }
+
+    .container-register-button{
+        display: block;
+    }
+
     .perfil-usuario div{
         display: block;        
     }
@@ -502,5 +516,18 @@ footer div i{
     footer{
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*estilos del register*/
+    .input-date{
+        width: 35vw;
+    }
+
+    .input-avatar{
+        position: relative;
+        left: 13rem;
+        width: 65vw;
     }
 }
