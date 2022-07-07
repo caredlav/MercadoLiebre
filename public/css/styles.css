@@ -1,141 +1,147 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
 
 
-header{
+header {
     background-color: #EAC926;
     padding: 10px;
 }
 
-header .principal{
-    display: inlines;
+header .principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-header div img{
-    width: 50vw;
+header .principal img {
+    width: 42vw;
 }
 
-header div .busqueda{
+header .busqueda {
     width: 45%;
     display: flex;
     justify-content: center;
-} 
-
-header div .busqueda .barra-busqueda{
-    width: 85%;
-    height: 20%;
-    border: none;
-    border-radius: 3%;
 }
 
-header div .busqueda button{
-    width: 5%;
-    height: 20%;
+header .busqueda .barra-busqueda {
+    width: 85%;
+    height: 100%;
     border: none;
-    border-radius: 2%;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+header .busqueda button {
+    width: 15%;
+    height: 100%;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: white;
 }
 
-header div .busqueda button i{
+header .busqueda button i {
     color: gray;
 }
 
-header nav div ul{
+header nav div ul {
     padding: 0;
 }
 
-header nav div ul li i{
+header nav div .list2 li i {
     color: black;
+    font-size: 1rem;
 }
 
-main{
-    background: gainsboro;
-    width: 90vw;
-    text-align: center;
-    line-height: 10px;
-    margin: auto;  
-    padding-bottom: 10px;  
-}
-
-.buscador{
-    background-color: white;
-}
-
-.compra_sint{
-    text-align: center;
-}
-
-li{
+li {
     list-style-type: none;
     text-align: left;
 }
 
-a{ 
-    text-decoration:none;
+a {
+    text-decoration: none;
     color: black;
+    font-size: 1rem;
 }
 
-.burger-menu{
+.burger-menu {
     width: 30px;
     height: 30px;
     text-align: center;
-    padding:6px;
+    padding: 6px;
     background: blue;
     margin: auto;
     border-radius: 5px;
 }
 
-div i{
+main {
+    background: gainsboro;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.buscador {
+    background-color: white;
+}
+
+.compra_sint i {
+    color: black;
+}
+
+div i {
     color: white;
     font-size: 20px;
 }
 
-h1{
+.main-home h1 {
     font-size: 24px;
-}
-
-.banner{
-    width: 100%;
-}
-
-.banner img{
-    width: 100vw;
-}
-
-main .container-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
-}
-
-main .container-main section .products{
-    border: 1px solid #ebebeb;
-    padding: 15px; 
-    margin: auto;
-}
-
-main .container-main section .products article{
-    background: white; 
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     text-align: left;
 }
 
-main .container-main section .products article i{
+.banner img {
+    width: 100%;
+}
+
+.main-home {
+    margin-top: -3px;
+}
+
+.main-home .home-section {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+}
+
+.main-home .home-section .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.main-home .home-section .articles-container .article-container {
+    margin: 10px;
+    width: 100%;
+}
+
+.main-home .home-section .articles-container .article-container .article-product {
+    background: #fff;
+}
+
+.main-home .home-section .articles-container .article-container .information-container i {
     display: block;
     color: green;
     font-size: 16px;
@@ -145,56 +151,63 @@ main .container-main section .products article i{
     padding: 5px;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute;
-    right: 50px;
+    position: relative;
+    right: -83%;
 }
 
-.img-products{
-    max-width: 80vw;
+.main-home .home-section .articles-container .article-container .information-container .price-discount-container {
+    display: flex;
+    padding: 15px;
 }
 
-.precios{
+.img-products {
+    width: 80vw;
+}
+
+.precios {
     font-size: 18px;
-    width: 30vw;
+    margin-right: 5px;
 }
 
-.descuentos{
+.descuentos {
     font-size: 16px;
-    width: 70vw;
     color: #39b54a;
 }
 
-.descripcion{
+.descripcion {
     font-size: 16px;
-    display: none;
+    text-align: left;
+    margin-left: 1rem;
+    padding-bottom: 10px;
+    opacity: 0.8;
 }
 
-footer{
+footer {
     text-align: center;
     color: #666;
     padding-top: 10px;
 }
 
-footer div i{
+footer div i {
     color: blue;
     font-size: 2em;
     line-height: 10px;
     margin-bottom: 10px;
 }
 
-.Copyright{
+.Copyright {
     text-align: center;
     padding-bottom: 10px;
 }
 
 /* estilos para el login */
 
-.main-login{
+.main-login {
     padding-top: 10px;
     width: 100vw;
 }
 
-.form-login{
+.form-login {
     padding: 70px;
 }
 
@@ -202,32 +215,31 @@ footer div i{
 
 /* estilos para el register */
 
-.main-register{
+.main-register {
     padding: 10px;
     padding-bottom: 20px;
     margin: auto;
-    width: 100vw;
 }
 
-.main-register div label{
+.main-register div label {
     font-weight: bold;
     font-size: 15px;
 }
 
-.main-register .inputs-text{
+.main-register .inputs-text {
     padding: 3px;
     padding-left: 5px;
     border-radius: 10px;
     border: 1px solid white;
 }
 
-.container-register-button{
+.container-register-button {
     margin-top: 1rem;
     display: inline-grid;
     margin-bottom: 2rem;
 }
 
-.main-register .container-register-button button{
+.main-register .container-register-button button {
     padding: 5px;
     background-color: blue;
     border: 1px solid blue;
@@ -235,24 +247,25 @@ footer div i{
     border-radius: 10px;
 }
 
-.title-register{
+.title-register {
     margin: 1rem;
 }
 
-.boton-submit{
+.boton-submit {
     margin-bottom: 10px;
 }
 
 /*estilos del register*/
 
-.form-register{
+.form-register {
     margin: 1rem;
     border: solid 1px black;
     border-radius: 1rem;
     background-color: whitesmoke;
+    width: 90%;
 }
 
-.form-register label{
+.form-register label {
     display: block;
     font-size: 1rem;
     margin: 6px;
@@ -261,76 +274,57 @@ footer div i{
     text-align: center;
 }
 
-.inputs-register{
+.inputs-register {
     border-radius: 1rem;
     margin: 7px;
     padding: 3px;
     width: 60vw
 }
 
-.inputs-radio{
+.inputs-radio {
     position: relative;
     top: 2px;
 }
 
-.inputs-checkbox{
+.inputs-checkbox {
     position: relative;
     top: 2px;
     margin: 1px;
     margin-right: 2px;
 }
 
-.container-inputs-checkbox{
+.container-inputs-checkbox {
     padding: 1rem;
     margin-top: -1rem;
 }
 
-.input-avatar{
+.input-avatar {
     width: 70vw;
     margin-bottom: 1rem;
 }
 
 /*fin de los estilos del register*/
 
-@media (max-width: 480px){
-    header div{
-        display: flex;
-        flex-wrap:wrap;
-    }
+@media (max-width: 767px) {
 
-    header div .busqueda .barra-busqueda{
-        width: 85%;
-        height: 30%;
-        padding: 3px;
-    }
-
-    header div .busqueda button{
-        width: 10%;
-        height: 30%;
-    }
-
-    header div .busqueda button i{
+    header div .busqueda button i {
         font-size: 12px;
     }
 
-    nav{
+    nav {
         display: none;
     }
-
-    main section .products .descripcion{
-        display: none;
-    }
-
 
     /* estilos para el login */
-    .main-login form div input{
+
+    .main-login form div input {
         height: 35px;
         border: 1px solid white;
         border-radius: 5%;
         padding: 3px;
     }
 
-    .main-login form button{
+    .main-login form button {
         width: 60%;
         height: 35px;
         background-color: blue;
@@ -340,123 +334,94 @@ footer div i{
     }
 }
 
-    /* estilos para el register */
-    .main-register .perfil-usuario{
-        display: flex;
-        justify-content:center;
-    }
-
-    .main-register .intereses input{
-        display: flex;
-        justify-content: center;
-    }
-
-@media (min-width: 481px){
-
-    /* estilosd del header */    
-    header nav div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    header div button{
-        width: 10%;
-        height: 20%;
-    }
-
-    header nav div ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .burger-menu{
-        display: none;
-    }
-    
-    /* estilos del main del home */ 
-    main div section{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: stretch;
-        flex-wrap: wrap;
-    }
-
-    main .products{
-        width: 60vw;
-    } 
-
-    main div section .products article{
-        margin: auto;
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* estilos para el login */
-    .main-login form div input{
-        width: 70%;
-        height: 35px;
-        border: 1px solid white;
-        border-radius: 5%;
-        padding: 3px;
-    }
-
-    .main-login form button{
-        width: 70%;
-        height: 35px;
-        background-color: blue;
-        border: 1px solid blue;
-        color: white;
-        border-radius: 3%;
-    }
-}
-
 /* estilos para el register */
-
-.main-register .perfil-usuario{
+.main-register .perfil-usuario {
     display: flex;
     justify-content: center;
 }
 
+.main-register .intereses input {
+    display: flex;
+    justify-content: center;
+}
 
+@media (min-width: 768px) {
 
-@media (min-width: 768px){
-    header div{
+    /* estilosd del header */
+    header nav div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header div button {
+        width: 10%;
+        height: 20%;
+    }
+
+    header nav div ul {
         display: flex;
     }
 
-    header nav div .list1{
-        align-content: flex-start;
-        padding-left: 10px;
+    header .principal img {
+        width: 22vw;
+        height: 13vh;
     }
 
-    header nav div .list2{
-        align-content: flex-end;
-        padding-right: 10px;
+    header .busqueda {
+        width: 40%;
+        margin: 13px;
     }
 
-    .burger-menu{
+    header .busqueda .barra-busqueda {
+        height: 8vh;
+    }
+
+    header .busqueda button {
+        height: 8vh;
+    }
+
+    header .compra_sint {
+        margin-top: 26px;
+        margin-right: 13px;
+    }
+
+    header nav div .list1 li {
+        margin-right: 10px;
+    }
+
+    header nav div .list2 {
+        margin-left: 95px;
+    }
+
+    header nav div .list2 li {
+        margin-right: 10px;
+    }
+
+    .burger-menu {
         display: none;
     }
 
-    main div section .products article{
-        display: flex;
-        flex-wrap: wrap;
+    /* estilos del home */
+
+    .main-home .home-section .articles-container .article-container {
+        margin: 24px;
+        width: 43%;
     }
 
-    main div section .products article:hover{
+    .main-home .home-section .articles-container .article-container .information-container i {
+        right: -75%;
+    }
+
+    .img-products {
+        width: 30vw;
+    }
+
+    .main-home .home-section .articles-container .article-container {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    main div section .products article:hover .descripcion{
-        display: block;
-    } 
-
-    main div section .products article i:hover{
-        transform: rotate(-90deg);
-        transition: 500ms;
+    .main-home h1 {
+        margin: 21px;
     }
 
     footer {
@@ -464,12 +429,8 @@ footer div i{
         justify-content: space-around;
     }
 
-    footer i:hover{
-        color: #EAC926;
-    }
-
     /* estilos para el login */
-    .main-login form div input{
+    .main-login form div input {
         width: 70%;
         height: 35px;
         border: 1px solid white;
@@ -477,7 +438,7 @@ footer div i{
         padding: 3px;
     }
 
-    .main-login form button{
+    .main-login form button {
         width: 40%;
         height: 35px;
         background-color: gray;
@@ -486,48 +447,134 @@ footer div i{
         border-radius: 3%;
     }
 
-    .main-login form button:hover{
+    .main-login form button:hover {
         background: #0022AA;
     }
 
     /* fin de estilos login */
 
     /* estilos para el register */
-    .input-date{
+
+    .form-register {
+        width: auto;
+    }
+
+    .input-date {
         width: 32vw;
     }
 
-    .input-avatar{
+    .input-avatar {
         width: unset;
     }
 
-    .container-register-button{
+    .container-register-button {
         display: block;
     }
 
-    .perfil-usuario div{
-        display: block;        
+    .perfil-usuario div {
+        display: block;
     }
 
-    .perfil-usuario #perfil{
+    .perfil-usuario #perfil {
         margin: 10px;
-    }
-
-    footer{
-        display: flex;
-        justify-content: space-around;
     }
 }
 
 @media (min-width: 1024px) {
+
+    header .principal img {
+        width: 25vw;
+    }
+
+    header .busqueda {
+        margin: 22px;
+    }
+
+    header .busqueda .barra-busqueda {
+        height: 5vh;
+    }
+
+    header .busqueda button {
+        width: 10%;
+        height: 5vh;
+    }
+
+    header nav div .list1 {
+        margin-right: 12rem;
+    }
+
+    /*estilos del home*/
+    .main-home .home-section .articles-container .article-container {
+        margin: 12px;
+        width: 22%;
+        box-shadow: none;
+        transform: scale(1);
+        transition: 500ms;
+    }
+
+    .main-home .home-section .articles-container .article-container:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transform: scale(1.1);
+    }
+
+    .descripcion {
+        display: none;
+    }
+
+    .main-home .home-section .articles-container .article-container .descripcion {
+        transition: 2s;
+    }
+
+    .main-home .home-section .articles-container .article-container:hover .descripcion {
+        display: block;
+    }
+
+    .main-home .home-section .articles-container .article-container .information-container {
+        padding-bottom: 10px;
+        transition: 2s;
+    }
+
+    .main-home .home-section .articles-container .article-container .information-container i {
+        transition: 500ms;
+    }
+
+    .main-home .home-section .articles-container .article-container .information-container i:hover {
+        transform: rotate(-90deg);
+        transition: 500ms;
+    }
+
+    .main-home h1 {
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+
+    .img-products {
+        width: 18vw;
+    }
+
     /*estilos del register*/
-    .input-date{
+
+    .main-register {
+        overflow: hidden;
+    }
+
+    .form-register {
+        width: 68vw;
+        position: relative;
+        left: 170px;
+    }
+
+    .input-date {
         width: 35vw;
     }
 
-    .input-avatar{
+    .input-avatar {
         position: relative;
         left: 13rem;
         width: 65vw;
+    }
+
+    footer i:hover {
+        color: #EAC926;
     }
 }

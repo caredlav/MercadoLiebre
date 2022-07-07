@@ -21,9 +21,9 @@
                 <input type="text" class="barra-busqueda" placeholder="Buscar productos, marcas...">
                 <button><i class="fas fa-search"></i></button>
             </form>
+            <label class="compra_sint"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de
+                crédito</label>
         </div>
-        <br>
-        <p class="compra_sint"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</p>
         <br>
         <nav>
             <div>
@@ -48,28 +48,30 @@
 
     <main class="main-register">
         <h2 class="title-register">Formulario de registro</h2>
-        <form class="form-register" action="" method="POST">                  
-           <input type="text" class="inputs-register" placeholder="Nombre y Apellido" name="nombre-apellido" required>
-           <input type="text" class="inputs-register" placeholder="Nombre de usuario" name="nombre-user" required minlength="6">
-           <label for="dateOfBirth">Fecha de nacimiento</label>
-           <input type="date" class="input-date" name="dateOfBirth" id="dateOfBirth" required>
-           <input type="text" class="inputs-register" placeholder="Domicilio" name="domicilio" required>
-           <label for="perfil">Perfil:</label>
-           <input type="radio" class="inputs-radio" id="perfil" required>Comprador
-           <input type="radio" class="inputs-radio" id="perfil" required>Vendedor
-           <label for="intereses">Intereses:</label>
-           <div class="container-inputs-checkbox">
-              <input type="checkbox" class="inputs-checkbox" value="electro">Electro
-            <input type="checkbox" class="inputs-checkbox" value="moda">Moda
-            <input type="checkbox" class="inputs-checkbox" value="hogar">Hogar
-            <input type="checkbox" class="inputs-checkbox" value="juguetería">Juguetería
-            <input type="checkbox" class="inputs-checkbox" value="vida sana">Vida sana 
-           </div>
-           
-           <label for="foto-perfil">Foto de perfil</label>
-           <input type="file" class="input-avatar" id="foto-perfil" required accept=".jpg .png" multiple>
-           <input type="password" class="inputs-register" placeholder="Contraseña" name="pass" required>
-           <input type="password" class="inputs-register" placeholder="Confirmar contraseña" name="ConfirmPass" required>
+        <form class="form-register" action="" method="POST">
+            <input type="text" class="inputs-register" placeholder="Nombre y Apellido" name="nombre-apellido" required>
+            <input type="text" class="inputs-register" placeholder="Nombre de usuario" name="nombre-user" required
+                minlength="6">
+            <label for="dateOfBirth">Fecha de nacimiento</label>
+            <input type="date" class="input-date" name="dateOfBirth" id="dateOfBirth" required>
+            <input type="text" class="inputs-register" placeholder="Domicilio" name="domicilio" required>
+            <label for="perfil">Perfil:</label>
+            <input type="radio" class="inputs-radio" required>Comprador
+            <input type="radio" class="inputs-radio" required>Vendedor
+            <label for="intereses">Intereses:</label>
+            <div class="container-inputs-checkbox">
+                <input type="checkbox" class="inputs-checkbox" value="electro">Electro
+                <input type="checkbox" class="inputs-checkbox" value="moda">Moda
+                <input type="checkbox" class="inputs-checkbox" value="hogar">Hogar
+                <input type="checkbox" class="inputs-checkbox" value="juguetería">Juguetería
+                <input type="checkbox" class="inputs-checkbox" value="vida sana">Vida sana
+            </div>
+
+            <label for="foto-perfil">Foto de perfil</label>
+            <input type="file" class="input-avatar" id="foto-perfil" required accept=".jpg .png" multiple>
+            <input type="password" class="inputs-register" placeholder="Contraseña" name="pass" required>
+            <input type="password" class="inputs-register" placeholder="Confirmar contraseña" name="ConfirmPass"
+                required>
             <div class="container-register-button">
                 <button class="boton-submit" type="submit">Enviar</button>
                 <button type="reset">Borrar todos los campos</button>
